@@ -1,0 +1,102 @@
+/*https://blakaciut.blogspot.com/  balck ground*/
+body{
+    background-image: url(../image/bg1.jpg);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#content{
+    display: grid;
+    grid-template-areas: 
+    "pic1 pic2 pic3"
+    "pic4 pic5 pic6";
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.6);
+}
+section{
+    box-sizing: border-box;
+    max-width: 100%;
+   /* background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.6); */
+    color: #f1f1f1;
+    /*margin:10px;*/
+}
+img{
+    max-width: 40%; 
+    float: left;
+    margin-right:5px;
+    margin: 10px;
+}
+.ctn{
+    color: #f1f1f1;
+}
+.detail{
+    font-size:15px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.cap{
+    font-weight: bold;
+    font-size: 18px;
+}
+#cr a{
+    font-size:1.5em;
+    display: block;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+#name{
+    font-size:3em;
+}
+.detail a{
+    display: block;
+    color: #f2f2f2;
+    text-decoration: none;
+
+}
+@media screen and (max-width:768px){
+    /*#txt{
+        font-size: 1.5em;
+        top: 70%;
+        left: 50%;
+        width: 100%;
+    }*/
+    img{
+        width: 50%;
+    }
+    p{
+        font-size:13px;
+        margin:0px;
+    }
+    #content{
+        display: grid;
+        grid-template-areas: 
+        "pic1 pic2"
+        "pic3 pic4"
+        "pic5 pic6";
+    }
+}
+
+@media screen and (max-width:610px){
+    img{
+        width: 60%;
+    }
+    #txt{
+        font-size: 0.8em;
+        top: 60%;
+        left: 50%;
+        width: 100%;
+    }
+    header{
+        height: 300px;
+    }
+    #content{
+        display: grid;
+        grid-template-areas: 
+        "pic1"
+        "pic2"
+        "pic3"
+        "pic4"
+        "pic5"
+        "pic6";
+    }
+}
